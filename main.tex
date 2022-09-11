@@ -1,0 +1,162 @@
+% Created 2021-10-21 Thu 21:58
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% Use roboto and lato for fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\usepackage{paracol}
+\columnratio{0.6} % Set the left/right column width ratio to 6:4.
+\usepackage[bottom]{footmisc}
+\DeclareNameAlias{sortname}{given-family}
+\usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
+\author{Rashmita Karak}
+\date{\today}
+\title{}
+\begin{document}
+
+\name{Rashmita Karak}
+\photoR{2.8cm}{dp.png}
+\tagline{Data Scientist}
+
+\personalinfo{
+  %\homepage{www.aidanscannell.com}
+  \email{rashmita.karak@gmail.com}
+  \phone{+91 9429370482}
+  \location{Mumbai, India}
+  \github{RashmitaK}
+  \kaggle{rashmitakarak}
+  \linkedin{rashmitak} 
+}
+\makecvheader
+
+\begin{paracol}{2}
+\cvsection{Professional Experience}
+\label{sec:orgc7cf794}
+\cvevent{Senior Data Scientist(R\&D)}{Tata Consultancy Services}{ May 2022 -- Ongoing}{ Mumbai, India}
+\cvdomain{Telecommunication}
+\begin{itemize}
+\item Leading a team of 4 members,integrating Time series Forecasting, including Hyper parameter tuning using Grid search, Randomized Search and Optuna, Incremental Learning and One Global Model using XGBoost and Light Gradient Boosting Machine.
+\item Mentored associates in applying Structured Thinking with advanced EDA for interactive story-telling.
+\item Integrated Alarm Dust Management process (Parent Child bundle creation, Generating Association Rules using Fpgrowth and Apriori, Superset Creation and ML Bundle creation) into a module.
+\item Implemented Rule Detection in Alarm using 3 ML algorithms, removing alarms carrying redundant information, altering out low-priority alarms when higher-priority alarms are present or substituting a set of alarms by some new information. 
+\item Currently implementing Superset Aggregation and Dynamic Flagging in the Alarm Dust Management Module.
+\end{itemize}
+
+\cvtag{Alarm correlation}
+\cvtag{Timeseries Forecasting}
+\cvtag{Fault Identification}
+\cvtag{Rule Discovery}
+\cvtag{Data Mining}
+\cvtag{Predictive Modelling}
+\par\divider
+\cvdomain{ING Bank, Netherlands}
+\begin{itemize}
+\item Applied Customer Segmentation using Clustering Algorithm and to find optimal k value, used Elbow Method, thereby improving the product development, customer service immensely.\%
+\item Gained experience in Python, Computer Vision, Machine Learning, and Deep Learning.Practiced TensorFlow ,scikit-learn and OpenCV for Deep Learning models.
+\item Performed Data Visualization and Analysis to find out Customer Churn Rate so that we could get the factors which will affect the output, decreasing Churn Rate by 10 percent. ING saves 1 million Euros because of this Analysis.
+\end{itemize}
+
+\cvtag{Python}
+\cvtag{Clustering}
+\cvtag{Plotly}
+\cvtag{Scikitlearn}
+\par\divider
+
+\cvdomain{TCS iON}
+\begin{itemize}
+\item Problem solving and Analysis within TCS iON which has a wide range of cloud based solutions encompassing schools, Boards, 
+Professional Institutes, Affiliated Colleges and Universities\%
+\end{itemize}
+
+\begin{itemize}
+\item Designed MVC, JDBC and Implemented customer requirements in Procurement \& Inventory Solution of SMB, using JAVA.
+\end{itemize}
+\cvtag{Analysis}
+\cvtag{JAVA}
+\cvtag{SQL}
+\par\divider
+\newpage
+
+\switchcolumn
+\cvsection{Skills}
+\label{sec:org48b047d}
+\cvtag{Python}
+\cvtag{NumPy}
+\cvtag{Pandas}
+\cvtag{Statsmodel}
+\cvtag{Scikit-Learn}
+\cvtag{Plotly}
+
+\cvtag{JAVA}
+\cvtag{SQL}
+\cvtag{Data Structure}
+\cvtag{ElasticSearch}
+
+\cvtag{Git/GitHub}
+\cvtag{Linux}
+\cvtag{Power BI}
+
+\cvsection{Education}
+\label{sec:org3d9c66c}
+\cvevent{Masters\ in Data Science}{ Liverpool John Moore's University}{ Jan 2020 - Nov 2022}{Natural Language Processing}
+\begin{itemize}
+\item Currently in process of writing dissertation on SQUAD (Stanford Question Answering Dataset) Analysis using various NLP algorithms and finding the best algorithm according to 2 metrics : exact string match (EM) and F1 score.
+\end{itemize}
+\divider
+\cvevent{PG Diploma\ in Data Science}{IIIT- Bangalore}{ Jan 2020 - Feb 2022}{Specialization in Deep Learning}
+\begin{itemize}
+\item Successfully implemented Style Transfer using GAN to scan MRI images for irregularities in brain images.
+\end{itemize}
+\divider
+\cvevent{Bachelor\ in Information Technology}{Asansol Engineering College}{ August 2012 - Mar 2016}{}
+\begin{itemize}
+\item DBMS, JAVA, SQL
+\end{itemize}
+
+\cvsection{Certification}
+\label{sec:orgd117464}
+\begin{itemize}
+\item Python Gold Badge - Hacker Rank
+\item Python - Complete Bootcamp - Udemy
+\end{itemize}
+
+\cvsection{Awards}
+\label{sec:orgd117464}
+\begin{itemize}
+\item "STAR OF THE MONTH" Award for execution of German Sprinters which saves ING Netherlands € 1 million per annum.
+\item "On the Spot" Award for analytical and problem solving skills in Project - iON.
+\end{itemize}
+\end{paracol}
+\end{document}
